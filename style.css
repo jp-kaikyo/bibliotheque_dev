@@ -1,6 +1,6 @@
-/* ==== PALETTE DES COULEURS ==== */
-
-
+/*==============================*/
+/* ==== PALETTE -- COULEUR ==== */
+/*==============================*/
 
 
 :root {
@@ -24,44 +24,44 @@
 
 
 
-/* ==== PALETTE DES TEXTES ==== */
+/*==============================*/
+/* ==== PALETTE -- TEXTES ==== */
+/*=============================*/
 
 
-
-
+/*  Police d'écriture  */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 
 :root {
-    --police-titre: "DM Serif Text", serif;   /* pour les titres */
-    --police-texte: "Comic Neue", cursive;   /* pour les paragraphes */
+    --police-titre: "DM Serif Text", serif;
+    --police-texte: "Comic Neue", cursive;
 }
 
-/* Desktop */
+
+/*  taille écran  */
 @media(min-width:1000px){
     :root {
-    --taille-titre-principal: 2rem;      /* h1 */
-    --taille-sous-titre: 1.5rem;         /* h2 */
-    --taille-texte: 1rem;                /* p */
-    --taille-liens:1rem;                 /* a */
+    --taille-titre-principal: 2rem;
+    --taille-sous-titre: 1.5rem;
+    --taille-texte: 1rem;
+    --taille-liens:1rem;
     --gras-titre: 700;
     --gras-texte: 400;   
 }}
 
-/* Mobile */
 @media(max-width:999px){
     :root {
-    --taille-titre-principal: 1.25rem;      /* h1 */
-    --taille-sous-titre: 1rem;              /* h2 */
-    --taille-texte: 0.75rem;                /* p */
-    --taille-liens:0.75rem;                 /* a */
+    --taille-titre-principal: 1.25rem;
+    --taille-sous-titre: 1rem;  
+    --taille-texte: 0.75rem;      
+    --taille-liens:0.75rem;   
     --gras-titre: 700;
     --gras-texte: 400;   
 }}
 
 
-/* style titre */
-
+/*  style titre  */
 h1 {
     font-family: var(--police-titre);
     font-weight: var(--gras-titre);
@@ -80,7 +80,8 @@ h2 {
     transition: 0.5s;
 }
 
-/* style texte */
+
+/*  style texte  */
 p, span {
     font-family: var(--police-texte);
     font-weight: var(--gras-texte);
@@ -89,7 +90,8 @@ p, span {
     line-height: 1.6;
 }
 
-/* style lien */
+
+/*  style lien  */
 a {
     font-style: oblique;
     font-weight: 500;
@@ -98,9 +100,7 @@ a {
 }
 
 
-/* == hover == */
-
-
+/*  survol  */
 h1:hover {
     text-shadow: 2.5px 2.5px 5px var(--objet-clic);
     transition: 0.5s;
@@ -116,9 +116,7 @@ a:hover {
 }
 
 
-/* == active == */
-
-
+/*  clic  */
 a:active {
     color: var(--objet-clic);
 }
@@ -126,11 +124,13 @@ a:active {
 
 
 
-/* ==== PALETTE DES BULLE ==== */
+/*=============================*/
+/* ==== PALETTE -- BULLE ==== */
+/*=============================*/
 
 
-
-
+/*  taille écran  */
+/*  Bulle Principal  */
 @media(min-width:1000px){
     .bulle_principal {
         background-color: var(--font-contenu);
@@ -156,6 +156,7 @@ a:active {
 }
 
 
+/*  bulle_secondaire  */
 @media(min-width:1000px){
    .bulle_secondaire {
         background-color: var(--font-contenu);
@@ -182,6 +183,7 @@ a:active {
 }
 
 
+/*  bulle_info  */
 @media(min-width:1000px){
     .bulle_info {
         background-color: var(--font-contenu);
@@ -208,6 +210,7 @@ a:active {
 }
 
 
+/*  bulle_action  */
 @media(min-width:1000px){
     .bulle_action {
         background-color: var(--font-contenu);
@@ -234,6 +237,7 @@ a:active {
 }
 
 
+/*  bulle_lien  */
 @media(min-width:1000px){
     .bulle_lien {
         display: grid;
@@ -287,9 +291,7 @@ a:active {
 }
 
 
-/* == hover == */
-
-
+/*  survol  */
 @media(min-width:1000px){
     .bulle_info:hover {
         border: solid var(--objet-survol);
@@ -307,7 +309,7 @@ a:active {
         transition: 1s;
     }
     .bulle_action:hover * {
-        color: inherit; /* "Prends la même couleur que ton parent" */
+        color: inherit;
         border: none;
         transition: 1s;
     }
@@ -323,9 +325,7 @@ a:active {
 }
 
 
-/* == active == */
-
-
+/* clic  */
 @media(min-width:1000px){
     .bulle_action:active,
     .bulle_info:active {
@@ -342,7 +342,6 @@ a:active {
         transition: 0.5s;
     }
 }
-
 
 @media(min-width:1000px){
     .bulle_lien:active {
@@ -364,11 +363,12 @@ a:active {
 
 
 
-/* ==== PALETTE DES btn ==== */
+/*===========================*/
+/* ==== PALETTE -- BTN ==== */
+/*===========================*/
 
 
-
-
+/*  taille écran  */
 @media(min-width:1000px){
     .btn_base {
         background-color: var(--font-contenu);
@@ -390,8 +390,6 @@ a:active {
 
 
 /* survol */
-
-
 @media(min-width:1000px){
     .btn_base:hover {
         transform: scale(1.10);
@@ -402,8 +400,6 @@ a:active {
 
 
 /* clic */
-
-
 @media(min-width:1000px){
     .btn_base:active {
         transform: scale(0.90);
@@ -422,11 +418,12 @@ a:active {
 
 
 
-/* ==== PALETTE DES Logo ==== */
+/*===========================*/
+/* ==== PALETTE -- LOGO ==== */
+/*===========================*/
 
 
-
-
+/*  taille écran  */
 @media(min-width:1000px){
     .logo {
         width: 40px;
@@ -443,9 +440,7 @@ a:active {
 }
 
 
-/* == hover == */
-
-
+/*  Survol  */
 @media(min-width:1000px){
     .logo:hover {
         transform: scale(1.15);
@@ -457,17 +452,13 @@ a:active {
 
 
 
-/* ==== CSS body ==== */
+/*=============================*/
+/* ==== VISEULLE APLIQUER ==== */
+/*=============================*/
 
 
-
-
+/*  body  */
 body {
     background-color: var(--fond-principal);
     text-align: center;
 }
-
-
-
-
-/* ==== VISEULLE APLIQUER ==== */
