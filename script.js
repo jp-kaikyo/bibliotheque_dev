@@ -75,3 +75,7 @@ button_charger.onclick = function(){
         document.getElementById("HEURE").innerHTML = heure;
     })
 }
+
+
+//  débogueur  //
+console.log("[ API ]")
