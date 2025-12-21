@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <!-- Métadonnées de la page -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Bibliotheque code de Joao Paulo</title>
+  </head>
 
-    <!-- Métadonnées de la page -->
-    <head>      
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
-        <title>Bibliotheque code de Joao Paulo</title>
-    </head>
+  <!-------------------------------->
+  <!-- Contenu visible de la page -->
+  <!-------------------------------->
 
+  <body>
+    <!-- En-tête du site -->
+    <header></header>
 
+    <!-- Contenu principal = bulle et btn -->
+    <main>
+      <section class="bulle_principal">
+        <h1>bulle_principale</h1>
+      </section>
 
+      <section class="bulle_secondaire">
+        <h2>bulle_secondaire</h2>
+      </section>
 
-    <!-------------------------------->
-    <!-- Contenu visible de la page -->
-    <!-------------------------------->
+      <section class="bulle_info">
+        <p>bulle_info</p>
+      </section>
 
+      <section class="bulle_action">
+        <p>bulle_action</p>
+      </section>
 
-    <body>      
+      <button class="btn_base">btn</button>
 
+      <!-- outil js -->
+      <section class="bulle_secondaire">
+        <h1>calcule js</h1>
+        <p>
+          <span id="A">1</span> + <span id="B">2</span> = <span id="AB">0</span>
+        </p>
+      </section>
 
-        <!-- En-tête du site -->
-        <header>        
-        </header>
+      <section class="bulle_secondaire">
+        <h1>info utilisateur js</h1>
 
+        <div>
+          <label for="nom"><p>Prénom</p></label>
+          <input type="text" name="nom" id="nom" />
+        </div>
 
-        <!-- Contenu principal = bulle et btn -->
-        <main>
-            <section class="bulle_principal">
-                <h1>bulle_principale</h1>
-            </section>
+        <button class="btn_base" id="btn_valide">Valider</button>
 
-            <section class="bulle_secondaire">
-                <h2>bulle_secondaire</h2>
-            </section>
+        <section class="bulle_info">
+          <p><span id="NOM"></span></p>
+        </section>
+      </section>
 
-            <section class="bulle_info">
-                <p>bulle_info</p>
-            </section>
+      <section class="bulle_secondaire">
+        <h1>API js</h1>
+        <p><span id="HEURE"></span></p>
 
-            <section class="bulle_action">
-                <p>bulle_action</p>
-            </section>
+        <button class="btn_base" id="charger">charger</button>
+      </section>
+    </main>
 
-            <section class="bulle_action">
-                <p><span id="A">1</span> + <span id="B">2</span> = <span id="AB">0</span></p>
-            </section>
+    <!-- Pied de page = lien pour réseaux sociaux -->
+    <footer>
+      <nav class="bulle_lien">
+        <h2>~ Réseaux sociaux ~</h2>
 
-            <button class="btn_base">btn</button>   
-        </main>
-
-
-        <!-- Pied de page = lien pour réseaux sociaux -->
-        <footer>        
-            <nav class="bulle_lien">
-                <h2>~ Réseaux sociaux ~</h2>
-
-                <a target="_blank" href="https://www.tiktok.com/@jp_kaikyo"><img class="logo" src="img/tiktok.png" alt="tiktok" ></a>
-                <a target="_blank" href="https://www.instagram.com/jp_kaikyo_art/"><img class="logo" src="img/insta.png" alt="insta"></a>
-                <a target="_blank" href="https://www.twitch.tv/jp_kaikyo"><img class="logo" src="img/twitch.png" alt="twitch"></a>
-                <a target="_blank" href="https://www.youtube.com/@Joao-Paulo-Pinto-Queiros"><img class="logo" src="img/youtube.png" alt="youtube"></a>
-            </nav>
-        </footer>
-    </body>
+        <a target="_blank" href="https://www.tiktok.com/@jp_kaikyo"
+          ><img class="logo" src="img/tiktok.png" alt="tiktok"
+        /></a>
+        <a target="_blank" href="https://www.instagram.com/jp_kaikyo_art/"
+          ><img class="logo" src="img/insta.png" alt="insta"
+        /></a>
+        <a target="_blank" href="https://www.twitch.tv/jp_kaikyo"
+          ><img class="logo" src="img/twitch.png" alt="twitch"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/@Joao-Paulo-Pinto-Queiros"
+          ><img class="logo" src="img/youtube.png" alt="youtube"
+        /></a>
+      </nav>
+    </footer>
+  </body>
 </html>
