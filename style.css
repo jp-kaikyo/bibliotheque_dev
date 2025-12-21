@@ -269,24 +269,15 @@ a:active {
     }
 }
 
+.bulle_lien {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 5px;
+}
+
 .bulle_lien h2 {
-    grid-area: 1 / 1 / 2 / 5;
-    margin: auto;
-}
-.bulle_lien a:nth-child(2) { 
-    grid-area: 2 / 1;
-    margin: auto;
-}
-.bulle_lien a:nth-child(3) { 
-    grid-area: 2 / 2;
-    margin: auto;
-}
-.bulle_lien a:nth-child(4) { 
-    grid-area: 2 / 3;
-    margin: auto;
-}
-.bulle_lien a:nth-child(5) { 
-    grid-area: 2 / 4;
+    grid-column: 1 / -1;
     margin: auto;
 }
 
