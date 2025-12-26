@@ -91,7 +91,7 @@ Modifie les variables CSS dans `:root` :
 ```css
 --fond-principal: #0F0F0F;
 --objet-permanent: #8B5CF6;
-```markdown
+````markdown
 
 
 ## 📝 Notes
