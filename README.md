@@ -72,7 +72,7 @@ Mon historique de blocs de code qui me permet de réunir en un endroit tout le c
 
 ## 🎯 Utilisation
 
-````markdown
+
 ### Modifier les valeurs de calcul
 Dans `index.html`, tu peux changer les valeurs dans les spans :
 ```html
