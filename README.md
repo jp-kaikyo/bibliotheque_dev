@@ -59,12 +59,14 @@ Mon historique de blocs de code qui me permet de réunir en un endroit tout le c
 
 ## 📁 Structure du projet
 ```
-├── index.html
-├── style.css
-├── script.js
+
 ├── images/
 │   └── [logos réseaux sociaux]
-└── README.md
+├── index.html
+├── LICENSE
+├── README.md
+├── script.js
+└── style.css
 ```
 
 
@@ -89,7 +91,7 @@ Modifie les variables CSS dans `:root` :
 ```css
 --fond-principal: #0F0F0F;
 --objet-permanent: #8B5CF6;
-```
+```markdown
 
 
 ## 📝 Notes
