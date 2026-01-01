@@ -389,6 +389,65 @@ a:active {
 
 
 
+/*=================================*/
+/* ==== PALETTE -- FORMULAIRE ==== */
+/*=================================*/
+
+
+form{
+    color: var(--objet-permanent);
+    background-color: var(--font-contenu);
+    box-shadow: 0px 0px 25px var(--ombre-moyenne);
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: solid var(--font-contours);
+}
+input {
+    text-align: center;
+}
+
+
+/*  Survol  */
+@media(min-width:1000px){
+    form{
+        margin: 15% 30% 0% 30%;
+    }
+    fieldset{
+        padding: 25px 50px 50px 50px;
+    }
+    label {
+        padding: 15px 0px 7.5px 0px;
+    }
+    input {
+        padding: 5px 0px 5px 0px;
+        margin: 0% 35% 0% 35%;
+    }
+}
+
+
+/*  clic  */
+@media(max-width:999px){
+    form{
+        margin: 25% 5% 0% 5%;
+        font-size: 12px;
+    }
+    fieldset{
+        padding: 25px 50px 50px 50px;
+    }
+    label {
+        padding: 15px 0px 7.5px 0px;
+    }
+    input {
+        padding: 5px 0px 5px 0px;
+        margin: 0% 20% 0% 20%;
+    }
+}
+
+
+
+
 /*=============================*/
 /* ==== VISEULLE APLIQUER ==== */
 /*=============================*/
