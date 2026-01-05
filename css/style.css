@@ -42,10 +42,9 @@
 /*  taille écran  */
 @media(min-width:1000px){
     :root {
-    --taille-titre-principal: 1.8rem;
+    --taille-titre-principal: 1.75rem;
     --taille-titre-second: 1.5rem;
-    --taille-texte: 1.2rem;
-    --taille-liens:1.2rem;
+    --taille-texte: 1.25rem;
     --gras-titre: 700;
     --gras-texte: 400;   
 }}
@@ -53,9 +52,8 @@
 @media(max-width:999px){
     :root {
     --taille-titre-principal: 1.5rem;
-    --taille-titre-second: 1.2rem;  
-    --taille-texte: 0.9rem;
-    --taille-liens: 0.9rem;  
+    --taille-titre-second: 1.25rem;  
+    --taille-texte: 1rem;
     --gras-titre: 700;
     --gras-texte: 400;     
 }}
@@ -68,7 +66,6 @@ h1 {
     font-weight: var(--gras-titre);
     font-size: var(--taille-titre-principal);
     color: var(--texte-titre);
-    margin-bottom: 0.5em;
     transition: 0.5s;
 }
 
@@ -78,19 +75,29 @@ h2, h3 {
     font-weight: var(--gras-titre);
     font-size: var(--taille-titre-second);
     color: var(--texte-titre);
-    margin-bottom: 0.5em;
     transition: 0.5s;
 }
 
 
 /*  style texte  */
-p, span {
+span {
+    cursor: text;
+    font-family: var(--police-texte);
+    font-weight: var(--gras-titre);
+    font-size: var(--taille-texte);
+    color: var(--texte-courant);
+    line-height: 2.50;
+}
+
+
+/*  style texte  */
+p {
     cursor: text;  
     font-family: var(--police-texte);
     font-weight: var(--gras-texte);
     font-size: var(--taille-texte);
     color: var(--texte-courant);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 
@@ -100,7 +107,7 @@ a {
     font-style: oblique;
     font-weight: 500;
     text-decoration: underline;
-    color: var(--texte-lien);
+    color: var(--taille-texte)
 }
 
 
@@ -120,25 +127,58 @@ a:active {
 
 /*  Bulle Principal  */
 .bulle_principal {
-    display: flex;
-    justify-content: space-around;
     text-align: center;
     background-color: var(--font-contenu);
     box-shadow: 0px 0px 25px var(--ombre-moyenne);
     border: solid var(--font-contours);
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 @media(min-width:1000px){
     .bulle_principal {
-        padding: 6px;
-        margin: 2% 4% 8% 4%;
+        display: flex;
+        justify-content: space-around;
+        padding: 1px;
+        margin: 1.5% 20% 3% 20%;
+    }
+
+    .mobil {
+        display: none;
     }
 }
 @media(max-width:999px){
     .bulle_principal {
-        padding: 3px;
-        margin: 1% 2% 4% 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1px;
+        padding: 1px;
+        margin: 0.5% 1% 2% 1%;
+    }
+
+    .PC {
+        display: none;
+    }
+
+    .gauche_haut {
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .gauche_bas{
+        grid-column: 1/2;
+        grid-row: 2/2;
+    }
+    .millieux{
+        grid-column: 2/2;
+        grid-row: 1/3;
+    }
+    .droite_haut{
+        grid-column: 3/3;
+        grid-row: 1/1;
+    }
+    .droite_bas{
+        grid-column: 3/3;
+        grid-row: 2/2;
     }
 }
 
@@ -150,7 +190,7 @@ a:active {
     border: solid var(--font-contours);
     box-shadow: 0px 0px 20px var(--ombre-moyenne);
     text-align: center;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 @media(min-width:1000px){
@@ -173,7 +213,7 @@ a:active {
     border: solid var(--font-contours);
     box-shadow: 0px 0px 15px var(--ombre-douce);
     text-align: center;
-    border-radius: 100px;
+    border-radius: 40px;
     transition: 1s;
 }
 
@@ -196,7 +236,7 @@ a:active {
     background-color: var(--font-contenu);
     border: solid var(--font-contours);
     text-align: center;
-    border-radius: 100px;
+    border-radius: 40px;
     box-shadow: 0px 0px 15px var(--ombre-douce);
     transition: 1s;
 }
@@ -224,7 +264,7 @@ a:active {
     background-color: var(--font-contenu);
     border: solid var(--font-contours);
     padding: 2px; 
-    border-radius: 25px;
+    border-radius: 10px;
     box-shadow: 0px 0px 25px var(--ombre-moyenne);
     transition: 1s;
 }
@@ -457,4 +497,7 @@ input {
 body {
     background-color: var(--fond-principal);
     text-align: center;
+}
+html {
+    scroll-behavior: smooth;
 }
