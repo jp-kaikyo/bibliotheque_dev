@@ -60,13 +60,22 @@ Mon historique de blocs de code qui me permet de réunir en un endroit tout le c
 ## 📁 Structure du projet
 ```
 
-├── images/
-│   └── [logos réseaux sociaux]
+├── css/
+│  └── style.css
+├── html/
+├── img/
+│  └── insta.png
+│  └── tiktok.png
+│  └── twitch.png
+│  └── youtube.png
+├── js/
+│  └── api.js
+│  └── calcule.js
+│  └── formulaire.js
 ├── index.html
 ├── LICENSE
-├── README.md
-├── script.js
-└── style.css
+└── README.md
+
 ```
 
 
@@ -96,7 +105,7 @@ Modifie les variables CSS dans `:root` :
 
 ## 📝 Notes
 
-- Les images doivent rester dans le dossier `images/` pour que le HTML fonctionne
+- Les images doivent rester dans le dossier `img/` pour que le HTML fonctionne
 - Le projet est volontairement simple et modulable
 - Facile d'ajouter de nouveaux composants ou exemples
 
