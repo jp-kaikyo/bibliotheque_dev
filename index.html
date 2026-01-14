@@ -1,117 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-  <!-- Métadonnées de la page -->
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/api.js" defer></script>
-    <script src="js/calcule.js" defer></script>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- INFO : Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+    <!-- INFO : CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/composents.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+
+    <!-- INFO : JS -->
     <script src="js/formulaire.js" defer></script>
-    <title>bibliothèque dev web</title>
+
+    <title>Portoflio de joao paulo</title>
   </head>
-
-
-
-
-  <!-------------------------------->
-  <!-- Contenu visible de la page -->
-  <!-------------------------------->
-  
-
+      
   <body>
-
-
-    <!-- En-tête du site -->
-    <header>
-      <section class="bulle_principal">
-        <h1 class="gauche_haut">A</h1>
-        <h1 class="gauche_bas">B</h1>
-        <h1 class="millieux mobil">C</h1>
-        <h1 class="millieux PC">C</h1>
-        <h1 class="droite_haut">D</h1>
-        <h1 class="droite_bas">E</h1>
-      </section>
-
-      <section class="bulle_secondaire">
-        <h2>bulle_secondaire</h2>
-      </section>
-    </header>
-
-  
-    <!-- Contenu principal = bulle et btn -->
     <main>
-      <section class="bulle_info">
-        <p>bulle_info</p>
-      </section>
+      <form action="" method="get">
+        <fieldset>
+          <legend>information</legend>
+          <label for="prenom">prenom :</label>
+          <input type="text" name="prenom" id="nom"><br>
 
-      <section class="bulle_action">
-        <p>bulle_action</p>
-      </section>
+          <label for="age">age :</label>
+          <input type="number" name="age" id="date"><br>
 
-      <button class="btn_base">btn</button>
-
-
-      <!-- outil js -->
-      <section class="bulle_secondaire">
-        <h1>calcule js</h1>
-        <p>
-          <span id="A">1</span> + <span id="B">2</span> = <span id="AB">0</span>
-        </p>
-      </section>
-
-      <section class="bulle_secondaire">
-        <h1>info utilisateur js</h1>
-
-        <div>
-          <label for="nom"><p>Prénom</p></label>
-          <input type="text" name="nom" id="nom" />
-        </div>
-
-        <button class="btn_base" id="btn_valide">Valider</button>
-
-        <section class="bulle_info">
-          <p><span id="NOM"></span></p>
-        </section>
-      </section>
-
-      <section class="bulle_secondaire">
-        <h1>API js</h1>
-        <p><span id="HEURE"></span></p>
-
-        <button class="btn_base" id="charger">charger</button>
-      </section>
+          <button type="button" class="btn_base" id="btn_valide">Entrée</button>
+        </fieldset>
+      </form>
     </main>
-
-
-    <!-- Pied de page lien pour réseaux sociaux -->
-    <footer>
-      <nav class="bulle_lien">
-        <h3>~ Réseaux sociaux ~</h3>
-
-        <a target="_blank" href="https://www.instagram.com/kaikyo_dev/"
-          ><img class="logo" src="img/insta.png" alt="insta"
-        /></a>
-
-        <a
-          target="_blank"
-          href="https://www.youtube.com/@Joao_Paulo_Pinto_Queiros_R"
-          ><img class="logo" src="img/youtube.png" alt="youtube"
-        /></a>
-
-        <a target="_blank" href="https://www.twitch.tv/jp_kaikyo_live"
-          ><img class="logo" src="img/twitch.png" alt="twitch"
-        /></a>
-
-        <a target="_blank" href="https://www.youtube.com/@Kaikyo_VOD"
-          ><img class="logo" src="img/youtube.png" alt="youtube"
-        /></a>
-
-        <a target="_blank" href="https://www.tiktok.com/@kaikyo_dev?lang=fr"
-          ><img class="logo" src="img/tiktok.png" alt="tiktok"
-        /></a>
-      </nav>
-    </footer>
   </body>
 </html>

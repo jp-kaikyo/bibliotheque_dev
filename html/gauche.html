@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- INFO : Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+        <!-- INFO : CSS -->
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/composents.css">
+        <link rel="stylesheet" href="../css/photo.css">
+        <link rel="stylesheet" href="../css/grid.css">
+
+        <!-- INFO : JS -->
+        <script src="../js/affichage_info.js" defer></script>
+        <script src="../js/navigation.js" defer></script>
+        
+        <title>Portoflio de joao paulo</title>
+    </head>
+
+    <body>
+        <header>
+
+            <!-- INFO : bannière des pages -->
+            <nav class="bulle_principal">   
+                <div class="bulle_action gauche_bas" id="nav_sommaire">
+                    <span>gauche</span>
+                </div>
+
+                <div class="bulle_info mobil millieux" id="nav_documents_mobil">
+                    <span class="age_afichage">nombre</span><br>
+                </div>
+
+                <div class="bulle_info PC" id="nav_documents_pc">
+                    <span class="age_afichage">nombre</span>
+                </div>                       
+
+                <div class="bulle_action droite_haut"  id="nav_competences">
+                    <span>droite</span>
+                </div>
+            </nav>
+        </header>
+
+
+       <!---- INFO : contenu de la page  ---->
+
+        <main>
+            <div class="bulle_secondaire">
+                <h1>- Présentation -</h1>
+
+                <section class="bulle_info grid_joao_paulo">
+                    <h2 id="joao_paulo">Joao Paulo</h2>
+
+                    <img class="photo" src="../img/joao-paulo/photo-de-joao-paulo.jpg" alt="joao paulo">
+
+                    <p>Prénom : Joao Paulo</p>
+                    <p>Nom : Pinto Queiros</p>
+                    <p>Ville : Montauban</p>
+                    <p>Âge : 20 ans</p>
+                    <p>Formation : CAP Équipier Polyvalent du Commerce</p>
+                </section>
+            </div>
+        </main>
+
+
+        <!---- INFO : Pied de page lien pour réseaux sociaux  ---->
+         
+        <footer>
+            <nav class="bulle_lien">
+                <h3>~ Réseaux sociaux ~</h3>
+
+                <a target="_blank" href="https://www.instagram.com/kaikyo_dev/" class="tooltip-container">
+                    <img class="logo" src="../img/logo/insta.png" alt="Insta"/>
+                    <span class="tooltip-text">Insta</span>
+                </a>
+
+                <a target="_blank"href="https://www.youtube.com/@Kaikyo_rediff" class="tooltip-container">
+                    <img class="logo" src="../img/logo/youtube.png" alt="Youtube rediff"/>
+                    <span class="tooltip-text">rediff</span>
+                </a>
+
+                <a target="_blank" href="https://www.twitch.tv/jp_kaikyo_live" class="tooltip-container">
+                    <img class="logo" src="../img/logo/twitch.png" alt="Twitch"/>
+                    <span class="tooltip-text">Twitch</span>
+                </a>
+
+                <a target="_blank" href="https://www.youtube.com/@Kaikyo_VOD" class="tooltip-container">
+                    <img class="logo" src="../img/logo/youtube.png" alt="Youtube VOD"/>
+                    <span class="tooltip-text">VOD</span>
+                </a>
+
+                <a target="_blank" href="https://www.tiktok.com/@kaikyo_dev?lang=fr" class="tooltip-container">
+                    <img class="logo" src="../img/logo/tiktok.png" alt="Tiktok"/>
+                    <span class="tooltip-text">Tiktok</span>
+                </a>
+            </nav>
+        </footer>
+    </body>
+</html>
