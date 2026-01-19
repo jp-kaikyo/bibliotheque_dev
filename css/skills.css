@@ -1,0 +1,15 @@
+/*=================*/
+/* ==== liste ==== */
+/*=================*/
+
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+@media(min-width:1000px){
+   li {
+        padding: 0% 0% 0% 10%;
+    }
+}

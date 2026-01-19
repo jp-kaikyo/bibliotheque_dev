@@ -1,0 +1,56 @@
+/*============================*/
+/* ========== grid ========== */
+/*============================*/
+
+
+/*  grid_projet  */
+
+.grid_projet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    align-items: center;
+}
+
+.grid_projet p {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+@media(min-width:1000px){
+    .grid_projet {
+        margin: 0% 25% 0% 25%;
+        padding: 10px 0px 20px 0px;
+    }
+}
+
+@media(max-width:999px){
+    .grid_projet {
+        margin: 0% 2.5% 0% 2.5%;
+        padding: 10px 0px 20px 0px;
+    }
+}
+
+
+/*  grid_joao_paulo  */
+
+@media(min-width:1000px){
+    .grid_joao_paulo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 70px 70px 70px 70px;
+        align-items: center;
+        margin: 0% 20% 0% 20%;
+        padding: 10px 0px 10px 20px;
+    }
+
+    .grid_joao_paulo h2 {
+        grid-column:1/2;
+        grid-row: 1/1;
+    }
+
+    .grid_joao_paulo img {
+        grid-column:1/1;
+        grid-row: 2/6;
+    }
+}
