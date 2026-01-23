@@ -6,17 +6,17 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
-    /// INFO : navigation presentation  ///
+    /// INFO : navigation bulle  ///
 
-    nav_presentation.onclick = function() {
-        window.location ='presentation.html';  
+    nav_bulle.onclick = function() {
+        window.location ='bulle.html';  
     }
 
 
-    /// INFO : navigation sommaire  ///
+    /// INFO : navigation fonctionnalité  ///
 
-    nav_sommaire.onclick = function() {
-        window.location ='sommaire.html';  
+    nav_fonctionnaliter.onclick = function() {
+        window.location ='fonctionnaliter.html';  
     }
 
 
@@ -28,19 +28,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     nav_documents_pc.onclick = function() {
         window.location ='documents.html';  
-    }
-
-
-    /// INFO : navigation competences  ///
-
-    nav_competences.onclick = function() {
-        window.location ='competences.html';  
-    }
-
-
-    /// INFO : navigation projets  ///
-
-    nav_projets.onclick = function() {
-        window.location ='projets.html';  
     }
 })
