@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 
-    /// INFO : navigation fonctionnalité  ///
+    /// INFO : navigation outil  ///
 
-    nav_fonctionnaliter.onclick = function() {
-        window.location ='fonctionnaliter.html';  
+    nav_outil.onclick = function() {
+        window.location ='outil.html';  
     }
 
 
