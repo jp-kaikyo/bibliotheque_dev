@@ -22,9 +22,13 @@ input {
 
 /*  Survol  */
 @media(min-width:1000px){
-    form{
+    .formulaire__bienvenue{
         margin: 15% 30% 0% 30%;
     }
+    .formulaire__modife{
+        margin: 1% 30% 0% 30%;
+    }
+
     fieldset{
         padding: 25px 50px 50px 50px;
     }
@@ -40,10 +44,14 @@ input {
 
 /*  clic  */
 @media(max-width:999px){
-    form{
+
+    .formulaire__bienvenue{
         margin: 25% 5% 0% 5%;
-        font-size: 12px;
     }
+    .formulaire__modife{
+        margin: 1% 5% 0% 5%;
+    }
+
     fieldset{
         padding: 25px 50px 50px 50px;
     }

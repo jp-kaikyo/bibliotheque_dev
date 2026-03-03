@@ -15,10 +15,12 @@
         <link rel="stylesheet" href="../css/composents.css">
         <link rel="stylesheet" href="../css/photo.css">
         <link rel="stylesheet" href="../css/grid.css">
+        <link rel="stylesheet" href="../css/formulaire.css">
 
         <!-- INFO : JS -->
         <script src="../js/affichage-info.js" defer></script>
         <script src="../js/navigation.js" defer></script>
+        <script src="../js/formulaire-modif.js" defer></script>
         
         <title>Portoflio de joao paulo</title>
     </head>
@@ -56,6 +58,19 @@
         <main>
             <div class="bulle_secondaire">
                 <h1>- modifier info -</h1>
+                
+                <form action="" method="get" class="formulaire__modife">
+                    <fieldset>
+                    <legend>modifier info perso</legend>
+                    <label for="prenom">prenom :</label>
+                    <input type="text" name="nom" id="modife__prenom">
+
+                    <label for="age">age :</label>
+                    <input type="number" name="age" id="modife__age">
+
+                    <button type="button" class="btn_base" id="btn_modif">Valider</button>
+                    </fieldset>
+                </form>
 
                 <h1>- Documents -</h1>
 

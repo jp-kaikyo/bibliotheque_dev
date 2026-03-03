@@ -3,6 +3,8 @@
 ///======================///
 
 
+let btn_valide = document.getElementById("btn_valide")
+
 document.addEventListener("DOMContentLoaded", function() {
     btn_valide.onclick = function() {
 
@@ -11,8 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let nom_input = document.getElementById("nom")
         let age_input = document.getElementById("date")
-
-        let btn_valide = document.getElementById("btn_valide")
 
         let prenom = nom_input.value
         let age = Number(age_input.value)

@@ -20,6 +20,7 @@ age_afichage.forEach(element => {
 })
 
 
+
 /// INFO : débogueur ///
 
 console.log("[ UTILISATION INFO ]")
