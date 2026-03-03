@@ -1,108 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- INFO : Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <!-- INFO : Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- INFO : CSS -->
-        <link rel="stylesheet" href="../css/base.css">
-        <link rel="stylesheet" href="../css/composents.css">
-        <link rel="stylesheet" href="../css/photo.css">
-        <link rel="stylesheet" href="../css/grid.css">
+    <!-- INFO : CSS -->
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/composents.css" />
+    <link rel="stylesheet" href="../css/photo.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
 
-        <!-- INFO : JS -->
-        <script src="../js/affichage-info.js" defer></script>
-        <script src="../js/navigation.js" defer></script>
-        <script src="../js/calcule.js" defer></script>
-        
-        <title>Portoflio de joao paulo</title>
-    </head>
+    <!-- INFO : JS -->
+    <script src="../js/formulaire.js" defer></script>
+    <script src="../js/affichage-info.js" defer></script>
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/calcule.js" defer></script>
+    <script src="../js/api.js" defer></script>
 
-    <body>
+    <title>Portoflio de joao paulo</title>
+  </head>
 
-        <!-- INFO : bannière des pages -->
-        <header>
-            <nav class="bulle_principal">   
-                <div class="bulle_action" id="nav_bulle">
-                    <span>bulle</span>
-                </div>
+  <body>
+    <!-- INFO : bannière des pages -->
+    <header>
+      <nav class="bulle_principal">
+        <div class="bulle_action" id="nav_bulle">
+          <span>bulle</span>
+        </div>
 
-                <div class="bulle_action mobil millieux" id="nav_documents_mobil">
-                    <span class="nom_afichage">pseudo</span><br>
-                    <span class="age_afichage">nombre</span><br>
-                    <span>cv</span>
-                </div>
+        <div class="bulle_action mobil millieux" id="nav_documents_mobil">
+          <span class="nom_afichage">pseudo</span><br />
+          <span class="age_afichage">nombre</span><br />
+          <span>cv</span>
+        </div>
 
-                <div class="bulle_action PC" id="nav_documents_pc">
-                    <span class="nom_afichage">pseudo</span>
-                    <span>-</span>
-                    <span class="age_afichage">nombre</span>
-                    <span>-</span>
-                    <span>cv</span>
-                </div>                            
+        <div class="bulle_action PC" id="nav_documents_pc">
+          <span class="nom_afichage">pseudo</span>
+          <span>-</span>
+          <span class="age_afichage">nombre</span>
+          <span>-</span>
+          <span>cv</span>
+        </div>
 
-                <div class="bulle_action"  id="nav_outil">
-                    <span>outil</span>
-                </div>
-            </nav>
-        </header>
+        <div class="bulle_action" id="nav_outil">
+          <span>outil</span>
+        </div>
+      </nav>
+    </header>
 
-       <!---- INFO : contenu de la page  ---->
-        <main>
-            <div class="bulle_secondaire">
-                <h1>- outil -</h1>
+    <!---- INFO : contenu de la page  ---->
+    <main>
+      <div class="bulle_secondaire">
+        <h1>- outil -</h1>
 
-                <section class="bulle_info">
-                    <h2>calcule</h2>
+        <section class="bulle_info">
+          <h2>calcule</h2>
 
-                    <span id="A">24</span>
-                    <span>+</span>
-                    <span id="B">36</span><br>
-                    <span id="AB">0</span>
-                </section>
+          <span id="A">24</span>
+          <span>+</span>
+          <span id="B">36</span><br />
+          <span id="AB">0</span>
+        </section>
 
-                <section class="bulle_info">
-                    <h2>calcule</h2>
+        <section class="bulle_info">
+          <h2>api</h2>
 
-                    <span id="A">24</span>
-                    <span>+</span>
-                    <span id="B">36</span><br>
-                    <span id="AB">0</span>
-                </section>
-            </div>
-        </main>
+          <span id="HEURE">info</span><br />
 
-        <!---- INFO : Pied de page lien pour réseaux sociaux  ---->
-        <footer>
-            <nav class="bulle_lien">
-                <h3>~ Réseaux sociaux ~</h3>
+          <button id="charger" class="btn_base">charger</button>
+        </section>
+      </div>
+    </main>
 
-                <a target="_blank" href="https://www.instagram.com/kaikyo_ars/" class="tooltip-container">
-                    <img class="logo" src="../img/insta.png" alt="Insta"/>
-                    <span class="tooltip-text">Insta</span>
-                </a>
+    <!---- INFO : Pied de page lien pour réseaux sociaux  ---->
+    <footer>
+      <nav class="bulle_lien">
+        <h3>~ Réseaux sociaux ~</h3>
 
-                <a target="_blank"href="https://www.youtube.com/@Kaikyo_Plays" class="tooltip-container">
-                    <img class="logo" src="../img/youtube.png" alt="Youtube"/>
-                    <span class="tooltip-text">Youtube</span>
-                </a>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/kaikyo_ars/"
+          class="tooltip-container"
+        >
+          <img class="logo" src="../img/insta.png" alt="Insta" />
+          <span class="tooltip-text">Insta</span>
+        </a>
 
-                <a target="_blank" href="https://www.twitch.tv/kaikyo_plays" class="tooltip-container">
-                    <img class="logo" src="../img/twitch.png" alt="Twitch"/>
-                    <span class="tooltip-text">Twitch</span>
-                </a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/@Kaikyo_Plays"
+          class="tooltip-container"
+        >
+          <img class="logo" src="../img/youtube.png" alt="Youtube" />
+          <span class="tooltip-text">Youtube</span>
+        </a>
 
-                <a target="_blank" href="https://www.tiktok.com/@kaikyo_dev?lang=fr" class="tooltip-container">
-                    <img class="logo" src="../img/tiktok.png" alt="Tiktok"/>
-                    <span class="tooltip-text">Tiktok</span>
-                </a>
-            </nav>
-        </footer>
-    </body>
+        <a
+          target="_blank"
+          href="https://github.com/jp-kaikyo"
+          class="tooltip-container"
+        >
+          <img class="logo" src="../img/github.png" alt="Github" />
+          <span class="tooltip-text">Github</span>
+        </a>
+
+        <a
+          target="_blank"
+          href="https://www.twitch.tv/kaikyo_plays"
+          class="tooltip-container"
+        >
+          <img class="logo" src="../img/twitch.png" alt="Twitch" />
+          <span class="tooltip-text">Twitch</span>
+        </a>
+
+        <a
+          target="_blank"
+          href="https://www.tiktok.com/@kaikyo_dev?lang=fr"
+          class="tooltip-container"
+        >
+          <img class="logo" src="../img/tiktok.png" alt="Tiktok" />
+          <span class="tooltip-text">Tiktok</span>
+        </a>
+      </nav>
+    </footer>
+  </body>
 </html>
