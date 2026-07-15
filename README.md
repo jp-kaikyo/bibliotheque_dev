@@ -37,11 +37,9 @@ Mon historique de blocs de code qui me permet de réunir en un endroit tout le c
 │  ├── cv_joao_paulo.pdf
 │  └── lettre_motivation_joao_paulo.pdf
 ├── html/
-│  ├── Competences.html
 │  ├── documents.html
-│  ├── Présentation.html
-│  ├── Projets.html
-│  └──  sommaire.html
+│  ├── outil.html
+│  └── structure.html
 ├── img/
 │  ├── joao-paulo/               
 │  |  └── photo-de-joao-paulo.jpg
@@ -53,6 +51,10 @@ Mon historique de blocs de code qui me permet de réunir en un endroit tout le c
 │     └── youtube.png
 ├── js/
 │  ├── affichage_info.js
+│  ├── api.js
+│  ├── calcule.js
+│  ├── formulaire-modif.js
+│  ├── navigation.js
 │  └── formulaire.js
 ├── index.html
 ├── LICENSE
