@@ -6,10 +6,10 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
-    /// INFO : navigation bulle  ///
+    /// INFO : navigation structure  ///
 
-    nav_bulle.onclick = function() {
-        window.location ='bulle.html';  
+    nav_structure.onclick = function() {
+        window.location ='structure.html';  
     }
 
 
