@@ -1,29 +1,3 @@
-/*==============================*/
-/* ==== PALETTE -- COULEUR ==== */
-/*==============================*/
-
-
-:root {
-    --fond-principal:#0F0F0F;
-    --font-contenu:#1A1A1A;
-    --font-contours:#2E2E2E;
-
-    --ombre-douce: #1A1A1A; 
-    --ombre-moyenne: #1F1F1F; 
-    --ombre-forte: #242424;  
-    
-    --texte-titre:#ffffff;
-    --texte-courant:#d1d1d1;
-    --texte-lien:#6f6f6f;
-
-    --objet-survol:#6E40C9;
-    --objet-permanent:#8B5CF6; 
-    --objet-clic:#9B6DED;
-}
-
-
-
-
 /*=============================*/
 /* ==== PALETTE -- TEXTES ==== */
 /*=============================*/
@@ -126,24 +100,4 @@ li {
 a:active {
     cursor: pointer;
     color: var(--objet-clic);
-}
-
-
-
-
-/*=============================*/
-/* ==== VISEULLE APLIQUER ==== */
-/*=============================*/ 
-
-
-/*  body  */
-
-body {
-    background-color: var(--fond-principal);
-    text-align: center;
-}
-
-html {
-    scroll-behavior: smooth;
-    font-size: 16px;
 }

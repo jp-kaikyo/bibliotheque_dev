@@ -1,0 +1,28 @@
+/*=================================*/
+/* =========== TOOLTIP =========== */
+/*=================================*/
+
+
+.tooltip-container {
+    position: relative;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--font-contours);
+    color:var(--objet-permanent);
+    padding: 2px 8px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.25s;
+}
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.25s;
+}
