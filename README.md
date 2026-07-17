@@ -27,12 +27,15 @@ Mon historique de blocs de code qui me permet de réunir en un endroit tout le c
 ```
 
 ├── css/
-│  ├── base.css
-│  ├── composents.css
-│  ├── formulaire.css
-│  ├── grid.css
-│  ├── photo.css
-│  └── skills.css
+│  ├── bouton.css.css
+│  ├── bulle.css.css
+│  ├── formulaire.css.css
+│  ├── globals.css.css
+│  ├── grid.cssto.css
+│  ├── media.css.css
+│  ├── tooltip.css
+│  ├── typographie.css
+│  └── variables.css
 ├── doc/
 │  ├── cv_joao_paulo.pdf
 │  └── lettre_motivation_joao_paulo.pdf
