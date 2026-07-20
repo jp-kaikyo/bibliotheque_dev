@@ -36,22 +36,27 @@ Mon historique de blocs de code qui me permet de réunir en un endroit tout le c
 │  ├── tooltip.css
 │  ├── typographie.css
 │  └── variables.css
+│
 ├── doc/
 │  ├── cv_joao_paulo.pdf
 │  └── lettre_motivation_joao_paulo.pdf
+│
 ├── html/
 │  ├── documents.html
 │  ├── outil.html
 │  └── structure.html
+│
 ├── img/
 │  ├── joao-paulo/               
 │  |  └── photo-de-joao-paulo.jpg
+│  │
 │  └── logo/          
 │     ├── github.png
 │     ├── insta.png                    
 │     ├── tiktok.png                 
 │     ├── twitch.png
 │     └── youtube.png
+│
 ├── js/
 │  ├── affichage_info.js
 │  ├── api.js
@@ -59,6 +64,11 @@ Mon historique de blocs de code qui me permet de réunir en un endroit tout le c
 │  ├── formulaire-modif.js
 │  ├── navigation.js
 │  └── formulaire.js
+│
+├── sass/
+│  ├── globals.sass
+│  └──
+│
 ├── index.html
 ├── LICENSE
 └── README.md
